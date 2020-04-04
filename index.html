@@ -1,109 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/9891ac06ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>BOOKS n BREWS</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<script src="https://kit.fontawesome.com/9891ac06ee.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
-	<title>BOOKS n BREWS</title>
-</head>
+  <body onload="slideshowInitialize()">
+    <!--  MOBILE MENU -->
 
-<body>
+    <div id="menu">
+      <ul>
+        <a href="about.html">
+          <li>ABOUT US</li>
+        </a>
+        <a href="info.html">
+          <li>INFO</li>
+        </a>
+        <a href="contact.html">
+          <li>CONTACT</li>
+        </a>
+        <a href="signup.html">
+          <li>SIGN IN</li>
+        </a>
+        <a href="barcode.html">
+          <li>REDEEM</li>
+        </a>
+      </ul>
+    </div>
 
-	<!--  MOBILE MENU -->
+    <!--  END MOBILE MENU -->
 
-	<div id="menu">
-		<ul>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img src="images/booksnbrewsLogo.png" alt="Logo"
+        /></a>
+        <ul id="links">
+          <a href="about.html">
+            <li>ABOUT US</li>
+          </a>
+          <a href="info.html">
+            <li>INFO</li>
+          </a>
+          <a href="contact.html">
+            <li>CONTACT</li>
+          </a>
+          <a href="signup.html">
+            <li>SIGN IN</li>
+          </a>
+          <a href="barcode.html">
+            <li>REDEEM</li>
+          </a>
+        </ul>
+        <i id="navButton" class="fas fa-bars"></i>
+      </nav>
+    </header>
 
-			<a href="about.html">
-				<li>ABOUT US</li>
-			</a>
-			<a href="info.html">
-				<li>INFO</li>
-			</a>
-			<a href="contact.html">
-				<li>CONTACT</li>
-			</a>
-			<a href="signup.html">
-				<li>SIGN IN</li>
-			</a>
-			<a href="barcode.html">
-				<li>REDEEM</li>
-			</a>
-		</ul>
-	</div>
+    <main id="content">
+      <section class="card" id="card1">
+        <div class="card1_main">
+          <h2>
+            DONATE <span style="color: white;">BOOKS</span> <br />
+            FOR A <span style="color: white;">COFFEE!</span>
+          </h2>
+          <p id="card1P">
+            Join us to donate your books and recieve your free coffee
+            redemption.
+          </p>
+          <a class="homeButton" href="signup.html">REGISTER</a>
+        </div>
 
-	<!--  END MOBILE MENU -->
+        <img
+          src="images/headerBooks.jpg"
+          alt="stacks of books"
+          id="card1BookImage"
+        />
+      </section>
 
-	<header>
-		<nav>
-			<a href="index.html"><img src="images/booksnbrewsLogo.png" alt="Logo"></a>
-			<ul id="links">
+      <section class="card" id="card2">
+        <img
+          src="images/headerBooksApp.jpg"
+          alt="stacks of books"
+          id="bookStackImage"
+        />
+      </section>
 
-				<a href="about.html">
-					<li>ABOUT US</li>
-				</a>
-				<a href="info.html">
-					<li>INFO</li>
-				</a>
-				<a href="contact.html">
-					<li>CONTACT</li>
-				</a>
-				<a href="signup.html">
-					<li>SIGN IN</li>
-				</a>
-				<a href="barcode.html">
-					<li>REDEEM</li>
-				</a>
-			</ul>
-			<i id="navButton" class="fas fa-bars"></i>
-		</nav>
+      <section class="card" id="card3">
+        <h3>SAVE THE DATE</h3>
 
-	</header>
+        <p id="savePara">21 July 2021, 9.00 AM - 3.00 PM</p>
+        <p id="savePara2">
+          Shed 10 <br />
+          89 Quay Street, Auckland 1010
+        </p>
 
-	<main>
+        <a class="readMoreButton" href="info.html">READ MORE</a>
+	  </section>
+	  
+	  <section class="card" id="slideshow">
+		<img src="./images/balls.png" class="ballsImage"/>
+		<img src="./images/threeCoffeeSlide.jpg" class="slideshowImages"/>
+		<img src="./images/pickBookSlide.jpg" class="slideshowImages hideSlide"/>
+		<img src="./images/bookshelfSlide.jpg" class="slideshowImages hideSlide"/>
+		<div class="slideshowNavigation">
+			<button id="prevButton" class="slideshowButtons"><i class="fas fa-chevron-left"></i></button>
+			<button id="nextButton" class="slideshowButtons"><i class="fas fa-chevron-right"></i></button>
+		</div>
+		
+	 
+	  </section>
 
-		<section id="content">
-			<div class="card" id="card1">
-				<h2>DONATE <span style="color: white;">BOOKS</span> <br> FOR A <span style="color: white;">COFFEE!</span></h2>
-				<p id="card1P">Join us to donate your books and <br> recieve your free coffee redemption.</p>
-				<a class="homeButton" href="signup.html">JOIN NOW</a>
-			</div>
+      <section class="card" id="card4">
+        <img
+          src="images/threeCoffee.jpg"
+          alt="three cups of coffee"
+          id="threeCoffee"
+        />
+        <img src="images/pickBook.jpg" alt="picking out a book" id="pickBook" />
+      </section>
 
-			<div class="card" id="card2"><img src="images/headerBooksApp.jpg" alt="stacks of books" id="bookStackImage">
-			</div>
+      <section class="card" id="card5">
+        <h2 id="tradeHeader">
+          DO A BOOK AND 
+          COFFEE TRADE 
+          WITH US.
+        </h2>
+		<a class="homeButton2" href="signup.html">JOIN NOW</a>
 
-			<div class="card" id="card3">
-				<h3>Save the Date</h3>
+	  </section>
+	  
+	  <section class="card" id="sponsors">
+		  <img src="./images/aucklandLive.jpg" class="sponsorLogo"/>
+		  <img src="./images/allpress.jpg" class="sponsorLogo"/>
+		  <img src="./images/scholastic.jpg" class="sponsorLogo"/>
+      </section>
+    </main>
 
-				<p id="savePara">21 July 2021, 9.00 AM - 3.00 PM</p>
-				<p id="savePara2">Shed 10 <br> 89 Quay Street, Auckland 1010</p>
+    <!-- FOOTER -->
 
-				<a class="readMoreButton" href="info.html">READ MORE</a>
-			</div>
+    <footer class="footer">
+      <div class="footerCategory" id="footerCredits">
+        <img src="./images/footerlogo.png" class="footerLogo" />
+        <h6 class="footerCopyright">© BOOKS n BREWS 2020</h6>
+      </div>
 
-			<div class="card" id="card4">
-				<img src="images/threeCoffee.jpg" alt="three cups of coffee" id="threeCoffee">
-				<img src="images/pickBook.jpg" alt="picking out a book" id="pickBook">
-			</div>
+      <div class="footerCategory">
+        <ul class="footerLists">
+          <li>EXPLORE</li>
+          <li>ABOUT US</li>
+          <li>INFO</li>
+          <li>PREFERENCES</li>
+        </ul>
+      </div>
 
-			<div class="card" id="card5">
-				<h2 id="tradeHeader">DO A BOOK AND <br> COFFEE TRADE <br> WITH US.</h2>
-				<a class="homeButton2" href="signup.html">JOIN NOW</a>
-			</div>
-		</section>
+      <div class="footerCategory">
+        <ul class="footerLists">
+          <li>LEGAL</li>
+          <li>TERMS OF USE</li>
+          <li>PRIVACY POLICY</li>
+        </ul>
+      </div>
 
+      <div class="footerCategory">
+        <ul class="footerLists">
+          <li>CONTACT</li>
+          <li>info@booksnbrews.co.nz</li>
+          <li>09 246 357</li>
+        </ul>
+        <div class="footer_social">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
 
-	</main>
-
-	<footer>
-
-	</footer>
-	<script src="js/main.js"></script>
-</body>
-
+      <h6 class="footerCopyrightMobile">© BOOKS n BREWS 2020</h6>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

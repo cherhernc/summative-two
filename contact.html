@@ -65,7 +65,7 @@
 	<main>
 		<form action="action_page.php" style="border:1px solid #ccc">
   <div class="containercontact">
-    <h2>Got Questions?</h2>
+    <h2 id="questionHeader">Got Questions?</h2>
     <p>Let us know how we can help.</p>
     
 
@@ -87,16 +87,15 @@
       
       
     
-  </div>
-  <div>
+  
   	  <p>info@booksnbrews.com</p>
       
       <p>09 246 357</p>
       
-      <ul id="contactsocial">
-      	<li><i class="fab fa-instagram"></i></li>
-      	<li><i class="fab fa-twitter"></i></li>
-      	<li><i class="fab fa-facebook-f"></i></li>
+      <ul id="contactSocialIcon">
+      	<li id="icon1"><i class="fab fa-instagram"></i></li>
+      	<li id="icon1"><i class="fab fa-twitter"></i></li>
+      	<li id="icon1"><i class="fab fa-facebook-f"></i></li>
       	
       </ul>
   </div>
@@ -104,7 +103,46 @@
 	</main>
 	
 	
-	<footer></footer>
+	<!-- FOOTER -->
+
+	<footer class="footer">
+		<div class="footerCategory" id="footerCredits">
+			<img src="./images/footerlogo.png" class="footerLogo" />
+			<h6 class="footerCopyright">© BOOKS n BREWS 2020</h6>
+		</div>
+
+		<div class="footerCategory">
+			<ul class="footerLists">
+				<li>EXPLORE</li>
+				<li>ABOUT US</li>
+				<li>INFO</li>
+				<li>PREFERENCES</li>
+			</ul>
+		</div>
+
+		<div class="footerCategory">
+			<ul class="footerLists">
+				<li>LEGAL</li>
+				<li>TERMS OF USE</li>
+				<li>PRIVACY POLICY</li>
+			</ul>
+		</div>
+
+		<div class="footerCategory">
+			<ul class="footerLists">
+				<li>CONTACT</li>
+				<li>info@booksnbrews.co.nz</li>
+				<li>09 246 357</li>
+			</ul>
+			<div class="footer_social">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+			</div>
+		</div>
+
+		<h6 class="footerCopyrightMobile">© BOOKS n BREWS 2020</h6>
+	</footer>
 	<script src="js/main.js"></script>
 </body>
 </html>

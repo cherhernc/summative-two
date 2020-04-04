@@ -10,8 +10,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
 	<title>Sign Up</title>
 </head>
+
 <body>
-	
+
 	<!--  MOBILE MENU -->
 
 	<div id="menu">
@@ -63,40 +64,80 @@
 
 	</header>
 	<main>
-		
-	<form action="action_page.php" style="border:1px solid #ccc">
-  <div class="containersignup">
-    <h2>Hey There!</h2>
-    <p>Join to recieve your coffee redemption code!</p>
-    
 
-    <label for="name"><b>Full Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="email" required>
-    
-    <label for="email"><b>Email Address</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <label for="psw-confirm"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
+		<form action="action_page.php" style="border:1px solid #ccc">
+			<div class="containersignup">
+				<h2 id="signUpHeader">Hey There!</h2>
+				<p>Join to recieve your coffee redemption code!</p>
 
 
-        <div>
-      <button type="join" class="joiningbutton">JOIN</button>
-      </div>
-      <p>By joining, you agree to our Term &amp; Conditions, and the Privacy Policy.</p>
-      
-      <p>I'm already a member</p>
-    
-  </div>
-</form>
+				<label for="name"><b>Full Name</b></label>
+				<input type="text" placeholder="Enter Full Name" name="email" required>
+
+				<label for="email"><b>Email Address</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<label for="psw-confirm"><b>Confirm Password</b></label>
+				<input type="password" placeholder="Confirm Password" name="psw-confirm" required>
+
+
+				<div>
+					<button type="join" class="joiningbutton">JOIN</button>
+				</div>
+				<p>By joining, you agree to our Term &amp; Conditions, and the Privacy Policy.</p>
+
+				<p>I'm already a member</p>
+
+			</div>
+		</form>
 
 	</main>
-	
-	
-	<footer></footer>
+
+
+	<!-- FOOTER -->
+
+	<footer class="footer">
+		<div class="footerCategory" id="footerCredits">
+			<img src="./images/footerlogo.png" class="footerLogo" />
+			<h6 class="footerCopyright">© BOOKS n BREWS 2020</h6>
+		</div>
+
+		<div class="footerCategory">
+			<ul class="footerLists">
+				<li>EXPLORE</li>
+				<li>ABOUT US</li>
+				<li>INFO</li>
+				<li>PREFERENCES</li>
+			</ul>
+		</div>
+
+		<div class="footerCategory">
+			<ul class="footerLists">
+				<li>LEGAL</li>
+				<li>TERMS OF USE</li>
+				<li>PRIVACY POLICY</li>
+			</ul>
+		</div>
+
+		<div class="footerCategory">
+			<ul class="footerLists">
+				<li>CONTACT</li>
+				<li>info@booksnbrews.co.nz</li>
+				<li>09 246 357</li>
+			</ul>
+			<div class="footer_social">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+			</div>
+		</div>
+
+		<h6 class="footerCopyrightMobile">© BOOKS n BREWS 2020</h6>
+	</footer>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
